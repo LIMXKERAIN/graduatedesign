@@ -116,7 +116,7 @@ public class ThirdActivity1 extends AppCompatActivity {
             imageView = this.findViewById(R.id.canvas_view);
 
             List<Line> lineList = this.calculateRoute(carWidth, areaLength, areaWidth);
-            bitmap = Bitmap.createBitmap(200, 200, Bitmap.Config.ARGB_8888);
+            bitmap = Bitmap.createBitmap(1080, 2400, Bitmap.Config.ARGB_8888);
             canvas = new Canvas(bitmap);
             this.myDraw(imageView, canvas, bitmap, lineList, areaLength, areaWidth);
         });
