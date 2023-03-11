@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_param_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/car_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="幅宽:(m)" />
+
+        <EditText
+            android:id="@+id/area_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="长:(m)" />
+
+        <EditText
+            android:id="@+id/area_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="宽:(m)" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="确定" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="保存" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/canvas_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_param_input"
+        android:contentDescription="TODO" />
+</RelativeLayout>
